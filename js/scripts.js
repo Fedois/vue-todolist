@@ -18,15 +18,14 @@ createApp({
             {
             text: 'fare il bucato',
             done: true 
-            }
+            },
         ],
       }
     },
     methods: {
         addText(){
             if(this.inputText != ''){
-                this.list.push(this.inputText)
-                console.log(this.list)
+                this.list.push({text: this.inputText, done: false})
             }
             
             this.inputText = ''
