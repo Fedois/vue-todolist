@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>to do list</title>
 </head>
 <body>
     
@@ -26,8 +26,8 @@
             <div class="container-bottom">
                 <ul>
                     <li v-if="list.length > 0" v-for="(element, index) in list">
-                        <span>
-                            {{element}}
+                        <span @click="addClass">
+                            {{element.text}}
                         </span>
                         <span @click="removeList(index)">
                             x

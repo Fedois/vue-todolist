@@ -6,7 +6,20 @@ createApp({
         inputText: '',
         line: '',
         done: false,
-        list: ['ciao', 'come', 'stai'],
+        list: [
+            {
+            text: 'fare i compiti',
+            done: true
+            },
+            {
+            text: 'fare la spesa',
+            done: true
+            },
+            {
+            text: 'fare il bucato',
+            done: true 
+            }
+        ],
       }
     },
     methods: {
