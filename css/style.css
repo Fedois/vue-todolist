@@ -3,14 +3,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 main{
     padding-top: 2rem;
     width: 50%;
     margin: 0 auto;
+}
+.container-top{
     text-align: center;
 }
+.logo{
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+.logo img{
+    width: 100%;
+}
+input{
+    margin-right: 5px;
+}
+
 ul{
     background-color: gray;
     margin-top: 2rem;
+    list-style: none;
+}
+ul li{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    padding: 1rem;
+    text-align: center;
+}
+.line-through{
+    text-decoration: line-through;
 }

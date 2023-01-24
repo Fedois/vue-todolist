@@ -14,18 +14,26 @@
         <main>
             <div class="container-top">
                 <div class="logo">
-                    <img src="l" alt="logo">
+                    <img src="logo.png" alt="logo">
                 </div>
 
                 <div class="input">
-                    <input type="text">
-                    <button>aggiungi</button>
+                    <input type="text" v-model="inputText">
+                    <button @click="addText">aggiungi</button>
                 </div>
             </div>
 
             <div class="container-bottom">
                 <ul>
-                    <li></li>
+                    <li v-if="list.length > 0" v-for="(element, index) in list">
+                        <span>
+                            {{element}}
+                        </span>
+                        <span @click="removeList(index)">
+                            x
+                        </span>
+                    </li>
+                    <h3 v-else="list.length == 0">to do list vuoto</h3>
                 </ul>
             </div>
         </main>
